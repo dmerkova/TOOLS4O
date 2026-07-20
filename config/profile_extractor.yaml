@@ -1,0 +1,58 @@
+input:
+  file: tests/data/sample.debufr.out
+
+selection:
+  stations:
+    - "30131A"
+
+  message_types:
+    - "NC002004"
+
+  start_time: "2025-10-27T00:00:00"
+  end_time: "2025-10-27T23:59:59"
+
+profile:
+  pressure_mnemonic: "PRLC"
+  compute_wind_components: true
+  merge_levels_across_messages: false
+  duplicate_pressure_handling: preserve
+
+  variables:
+    - mnemonic: "TMDB"
+      output_name: "temperature"
+      quantity: temperature
+    - mnemonic: "TMDP"
+      output_name: "dewpoint"
+      quantity: temperature
+    - mnemonic: "WDIR"
+      output_name: "wind_direction"
+    - mnemonic: "WSPD"
+      output_name: "wind_speed"
+    - mnemonic: "REHU"
+      output_name: "relative_humidity"
+
+  metadata:
+    - "VSIG"
+    - "QMAT"
+    - "QMDD"
+    - "QMWN"
+    - "QMPR"
+
+output:
+  directory: output
+  format: csv
+  organization: one_file_per_station
+  pressure_units: hPa
+  temperature_units: celsius
+  missing_value: ""
+  sort_pressure: descending
+
+  include_columns:
+    - message_number
+    - message_type
+    - station
+    - observation_time
+    - latitude
+    - longitude
+    - level_number
+    - pressure
