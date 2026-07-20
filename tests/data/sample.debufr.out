@@ -1,0 +1,80 @@
+BUFR message #      1 of type NC002004 and date 2025102709 contains      1 subsets:
+
+MESSAGE TYPE NC002004
+
+001198  RPID                      30131A  ( 8)CCITT IA5
+005002  CLAT                       15.20  DEGREES
+006002  CLON                      -76.70  DEGREES
+004001  YEAR                       2025  YEAR
+004002  MNTH                         10  MONTH
+004003  DAYS                         27  DAY
+004004  HOUR                          9  HOUR
+           {UARLV}    4 REPLICATIONS
+    ++++++  UARLV  REPLICATION #     1  ++++++
+008001  VSIG                          64  FLAG TABLE(1)
+007004  PRLC                      100000  PASCALS
+012101  TMDB                      302.15  DEGREES KELVIN
+012103  TMDP                      298.15  DEGREES KELVIN
+
+    ++++++  UARLV  REPLICATION #     2  ++++++
+008001  VSIG                           4  FLAG TABLE(5)
+007004  PRLC                       92300  PASCALS
+012101  TMDB                      295.95  DEGREES KELVIN
+012103  TMDP                    MISSING  DEGREES KELVIN
+013003  REHU                         72  PERCENT
+
+    ++++++  UARLV  REPLICATION #     3  ++++++
+007004  PRLC                      100000  PASCALS
+011001  WDIR                         200  DEGREES TRUE
+011002  WSPD                        12.9  METERS/SECOND
+033007  QMPR                           0  CODE TABLE
+
+    ++++++  UARLV  REPLICATION #     4  ++++++
+007004  PRLC                       85000  PASCALS
+011001  WDIR                         210  DEGREES TRUE
+011002  WSPD                        15.0  METERS/SECOND
+011003  UWND                         7.5  METERS/SECOND
+011004  VWND                        13.0  METERS/SECOND
+
+Found BUFR message      2
+
+MESSAGE TYPE NC002004
+
+001198  RPID                99999    ( 5)CCITT IA5
+005002  CLATH                   40.10  DEGREES
+006002  CLONH                  -75.30  DEGREES
+004001  YEAR                    2025  YEAR
+004002  MNTH                      10  MONTH
+004003  DAYS                      27  DAY
+004004  HOUR                      12  HOUR
+004005  MINU                      30  MINUTE
+           {UARLV}    2 REPLICATIONS
+    ++++++  UARLV  REPLICATION #     1  ++++++
+007004  PRLC                   100500  PASCALS
+012101  TMDB                   290.15  DEGREES KELVIN
+
+    ++++++  UARLV  REPLICATION #     2  ++++++
+007004  PRLC                    90000  PASCALS
+011001  WDIR                      180  DEGREES TRUE
+011002  WSPD                       10  METERS/SECOND
+
+BUFR message #      3 of type NC002004 and date 2025102718 contains      1 subsets:
+
+MESSAGE TYPE NC002004
+
+001198  RPID                      30131A  ( 8)CCITT IA5
+005002  CLAT                       15.20  DEGREES
+006002  CLON                      -76.70  DEGREES
+004001  YEAR                       2025  YEAR
+004002  MNTH                         10  MONTH
+004003  DAYS                         27  DAY
+004004  HOUR                         18  HOUR
+           {UARLV}    2 REPLICATIONS
+    ++++++  UARLV  REPLICATION #     1  ++++++
+007004  PRLC                       70000  PASCALS
+012101  TMDB                      280.15  DEGREES KELVIN
+    ++++++  UARLV  REPLICATION #     2  ++++++
+007004  PRLC                       70000  PASCALS
+011001  WDIR                         90  DEGREES TRUE
+011002  WSPD                        20.0  METERS/SECOND
+012103  TMDP                      279.15  DEGREES KELVIN
