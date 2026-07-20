@@ -12,8 +12,7 @@
 
 namespace {
 
-const std::filesystem::path kRepoRoot = "/home/runner/work/TOOLS4O/TOOLS4O";
-const std::filesystem::path kSampleFile = kRepoRoot / "tests/data/sample.debufr.out";
+const std::filesystem::path kSampleFile = std::filesystem::path(DEBUFR_TEST_DATA_DIR) / "sample.debufr.out";
 
 debufr::AppConfig makeConfig() {
     debufr::AppConfig config;

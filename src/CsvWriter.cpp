@@ -127,7 +127,8 @@ std::optional<double> computeU(const ProfileLevel& level) {
     if (!direction || !speed) {
         return std::nullopt;
     }
-    constexpr double degreesToRadians = 3.14159265358979323846 / 180.0;
+    constexpr double kPi = 3.14159265358979323846;
+    constexpr double degreesToRadians = kPi / 180.0;
     return -*speed * std::sin(*direction * degreesToRadians);
 }
 
@@ -141,7 +142,8 @@ std::optional<double> computeV(const ProfileLevel& level) {
     if (!direction || !speed) {
         return std::nullopt;
     }
-    constexpr double degreesToRadians = 3.14159265358979323846 / 180.0;
+    constexpr double kPi = 3.14159265358979323846;
+    constexpr double degreesToRadians = kPi / 180.0;
     return -*speed * std::cos(*direction * degreesToRadians);
 }
 
